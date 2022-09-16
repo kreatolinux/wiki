@@ -1,0 +1,2 @@
+# wiki
+Kreato Linux Wiki 
