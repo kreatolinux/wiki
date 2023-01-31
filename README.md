@@ -1,2 +1,3 @@
-# wiki
-Kreato Linux Wiki 
+# Wiki
+Kreato Linux Wiki
+
