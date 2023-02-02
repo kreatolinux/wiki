@@ -1,28 +1,26 @@
 # Installation
 
 ## Introduction 
-This guide shows you how to install Kreato Linux. This is not a in-depth guide and never will be because;
-1- It requires too much work
-2- This distro is not for people that need in-depth guides.
 It is assumed that you have a partition layout already setup.
-It is assumed that you are using a UEFI system.
+It is also assumed that you are using a UEFI system.
 Kreato Linux doesn't have a live ISO image. It is assumed that you would start the installation from another Linux installation. 
 If you do not have a working Linux install, we recommend [Arch Linux LiveISO](https://archlinux.org/download/) for installation.
-This guide is **work-in-progress** and may not work. Please open a issue if so.
 
 ## Get rootfs tarball
 First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [Github Actions](https://github.com/kreatolinux/nyaa3/actions?query=is%3Asuccess).
 
 ### Choosing the right tarball
-Kreato Linux is a modular distribution. There are two build types currently available.
+Kreato Linux is a modular distribution. There are three build types currently available.
+
 * nocc-rootfs
-* and builder-rootfs.
+* builder-rootfs
+* and server-rootfs.
 
 nocc-rootfs is completely built by GitHub Actions and as the name implies, doesnt have any compilers by default. You can use binaries to install any compilers, or dont build at all and use the system with just binaries.
 
 builder-rootfs is also built by GitHub actions and comes with gcc.
 
-More builds will be available soon.
+You dont need to touch server-rootfs, it is meant for Kreato Linux binary repository server and it comes with an web server for that purpose.
 
 ### Extracting
 Mount the partition you are gonna install it to `/mnt`.
@@ -61,7 +59,7 @@ Both choices have their own advantages.
 * Building is slower than downloading a binary tarball.
 
 #### Advantages and disadvantages of binary packages
-* Updates are available with a lag. 
+* Updates are available with a lag.
 * Has less customizability.
 * Doesn't require building packages, making it more suitable to older/less powerful systems.
 * Is not currently stable, packages may not even exist on the mirror.
@@ -93,7 +91,7 @@ You can enable shadowed passwords by running `pwconv`, and enable shadowed group
 
 ### Installing the bootloader
 Kreato Linux offers multiple bootloaders.
-You can use Limine, Grub or if you have a kernel that has EFISTUB enabled (prebuilt kernel does have it enabled), you can use [efictl](https://github.com/kreatolinux/efictl/)
+You can use Limine or Grub
 
 This guide will show Limine since it is the most tested option.
 You can install Limine by running `nyaa install limine`.
@@ -121,3 +119,8 @@ Kreato Linux only offers `sway` for now and will only support Wayland for now.
 You can install sway by running `nyaa install sway`.
 More Wayland window managers are coming soon.
 You can also install foot, a terminal by running `nyaa install foot`
+
+# What's Next
+You can tinker with your setup, install additional software, package something, etc.
+
+If you want to contribute to Kreato Linux, you can look at the [Contribution Guide](./contributing/welcome.md).
