@@ -123,4 +123,4 @@ You can also install foot, a terminal by running `nyaa install foot`
 # What's Next
 You can tinker with your setup, install additional software, package something, etc.
 
-If you want to contribute to Kreato Linux, you can look at the [Contribution Guide](./contributing).
+If you want to contribute to Kreato Linux, you can look at the [Contribution Guide](./contributing/index.md).
