@@ -7,7 +7,7 @@ Kreato Linux doesn't have a live ISO image. It is assumed that you would start t
 If you do not have a working Linux install, we recommend [Arch Linux LiveISO](https://archlinux.org/download/) for installation.
 
 ## Get rootfs tarball
-First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [Github Actions](https://github.com/kreatolinux/nyaa3/actions?query=is%3Asuccess).
+First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [Github Actions](https://github.com/kreatolinux/src/actions/workflows/build-rootfs.yml?query=is%3Asuccess).
 
 ### Choosing the right tarball
 Kreato Linux is a modular distribution. There are three build types currently available.
@@ -64,29 +64,29 @@ Both choices have their own advantages.
 * Doesn't require building packages, making it more suitable to older/less powerful systems.
 * Is not currently stable, packages may not even exist on the mirror.
 
-This installation guide will assume that you are gonna install binary packages (`nyaa install packagename`). If you want to build packages, please change `nyaa install` to `nyaa build` so it builds the packages instead of installing the binary.
+This installation guide will assume that you are gonna install binary packages (`kpkg install packagename`). If you want to build packages, please change `kpkg install` to `kpkg build` so it builds the packages instead of installing the binary.
 
 Now we can continue with installing base system packages.
 
 ### Installing the init system
-Kreato Linux includes multiple init systems. OpenRC, systemd and busybox init exist as a option.
+Kreato Linux includes multiple init systems. OpenRC, and busybox init exist as a option.
 
-* If you want busybox init, you can install `base-runit`: `nyaa install base-runit`
-* If you want OpenRC: you can install `openrc`: `nyaa install openrc`
+* If you want busybox init, you can install `base-runit`: `kpkg install base-runit`
+* If you want OpenRC: you can install `openrc`: `kpkg install openrc`
 
 ### Installing networking tools
-`dhcpcd` is recommended. run `nyaa install dhcpcd` to install `dhcpcd`.
-you should install `wpa_supplicant` aswell if you need Wi-Fi connectivity. run `nyaa install wpa_supplicant` to install it.
+`dhcpcd` is recommended. run `kpkg install dhcpcd` to install `dhcpcd`.
+you should install `wpa_supplicant` aswell if you need Wi-Fi connectivity. run `kpkg install wpa_supplicant` to install it.
 
 ### Building the kernel
 You can either build your own kernel or use Kreato Linux's kernel, that uses Arch Linux's kernel configuration.
 It is recommended to build your own kernel, since it will be much more minimal and will compile faster.
-You can run `nyaa install linux-arch` to install the prebuilt kernel.
+You can run `kpkg install linux-arch` to install the prebuilt kernel.
 As for building your own kernel, you can check out [This video](https://www.youtube.com/watch?v=NVWVHiLx1sU).
 
 ### Installing shadow
 Installing `shadow` is recommended since a lot of software uses shadow.
-Run `nyaa install shadow` to install `shadow`.
+Run `kpkg install shadow` to install `shadow`.
 You can enable shadowed passwords by running `pwconv`, and enable shadowed group passwords by running `grpconv`.
 
 ### Installing the bootloader
@@ -94,7 +94,7 @@ Kreato Linux offers multiple bootloaders.
 You can use Limine or Grub
 
 This guide will show Limine since it is the most tested option.
-You can install Limine by running `nyaa install limine`.
+You can install Limine by running `kpkg install limine`.
 Configuration is already explained greatly on [Arch Wiki](https://wiki.archlinux.org/title/Limine), so i wont repeat it here.
 
 ## Change the root password
@@ -116,9 +116,9 @@ echo "export LANG=$LOCALE" >> /etc/profile
 
 ## Installing a Window Manager
 Kreato Linux only offers `sway` for now and will only support Wayland for now.
-You can install sway by running `nyaa install sway`.
+You can install sway by running `kpkg install sway`.
 More Wayland window managers are coming soon.
-You can also install foot, a terminal by running `nyaa install foot`
+You can also install foot, a terminal by running `kpkg install foot`
 
 # What's Next
 You can tinker with your setup, install additional software, package something, etc.
