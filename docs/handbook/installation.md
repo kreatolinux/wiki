@@ -69,29 +69,27 @@ This installation guide will assume that you are gonna install binary packages (
 Now we can continue with installing base system packages.
 
 ### Installing the init system
-Kreato Linux includes multiple init systems. OpenRC, and busybox init exist as a option.
+Kreato Linux includes multiple init systems. OpenRC, busybox init and jumpstart exist as a option. Jumpstart is the default and recommended option. 
 
 * If you want busybox init, you can install `base-runit`: `kpkg install base-runit`
 * If you want OpenRC: you can install `openrc`: `kpkg install openrc`
+* If you want Jumpstart, it is installed by default
 
 ### Installing networking tools
 `dhcpcd` is recommended. run `kpkg install dhcpcd` to install `dhcpcd`.
 you should install `wpa_supplicant` aswell if you need Wi-Fi connectivity. run `kpkg install wpa_supplicant` to install it.
 
+<!---
 ### Building the kernel
 You can either build your own kernel or use Kreato Linux's kernel, that uses Arch Linux's kernel configuration.
 It is recommended to build your own kernel, since it will be much more minimal and will compile faster.
 You can run `kpkg install linux-arch` to install the prebuilt kernel.
 As for building your own kernel, you can check out [This video](https://www.youtube.com/watch?v=NVWVHiLx1sU).
-
-### Installing shadow
-Installing `shadow` is recommended since a lot of software uses shadow.
-Run `kpkg install shadow` to install `shadow`.
-You can enable shadowed passwords by running `pwconv`, and enable shadowed group passwords by running `grpconv`.
+-->
 
 ### Installing the bootloader
 Kreato Linux offers multiple bootloaders.
-You can use Limine or Grub
+You can use Limine or Grub.
 
 This guide will show Limine since it is the most tested option.
 You can install Limine by running `kpkg install limine`.
