@@ -1,5 +1,6 @@
 site_name: Kreato Linux Documentation
 theme:
+  name: material
   palette:
 
     # Palette toggle for automatic mode
