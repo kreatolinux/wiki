@@ -10,7 +10,7 @@ If you do not have a working Linux install, we recommend [Arch Linux LiveISO](ht
 First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [Github Actions](https://github.com/kreatolinux/src/actions/workflows/build-rootfs.yml?query=is%3Asuccess).
 
 ### Choosing the right tarball
-Kreato Linux is a modular distribution. There are three build types currently available.
+Kreato Linux is a modular distribution. There are four build types currently available.
 
 * nocc-rootfs
 * builder-rootfs
