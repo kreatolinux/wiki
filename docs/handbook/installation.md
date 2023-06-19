@@ -14,11 +14,14 @@ Kreato Linux is a modular distribution. There are three build types currently av
 
 * nocc-rootfs
 * builder-rootfs
+* builder-gnu-rootfs
 * and server-rootfs.
 
 nocc-rootfs is completely built by GitHub Actions and as the name implies, doesnt have any compilers by default. You can use binaries to install any compilers, or dont build at all and use the system with just binaries.
 
 builder-rootfs is also built by GitHub actions and comes with gcc.
+
+builder-gnu-rootfs is just builder-rootfs with GNU coreutils, this is for building problematic packages with Busybox such as systemd.
 
 You dont need to touch server-rootfs, it is meant for Kreato Linux binary repository server and it comes with an web server for that purpose.
 
