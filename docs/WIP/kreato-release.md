@@ -15,5 +15,5 @@ TLS="openssl"
 INIT="jumpstart"
 ```
 
-The file will be sourced by kpkg  build-time so package scripts can use these variables.
+The file will be sourced by kpkg at build-time so package scripts can use these variables.
 Kreastrap will generate this file at the time the rootfs is built.
