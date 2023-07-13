@@ -1,10 +1,24 @@
 # Installation
 
 ## Introduction 
-It is assumed that you have a partition layout already setup.
-<br>It is also assumed that you are using a UEFI system.</br>
-<br>Kreato Linux doesn't have a live ISO image. It is assumed that you would start the installation from another Linux installation.</br>
-<br>If you do not have a working Linux install, we recommend [Arch Linux LiveISO](https://archlinux.org/download/) for installation.</br>
+
+Welcome to Kreato Linux installation guide! 
+<br>This guide hopefully won't be needed when klinstaller is usable, but for now it should suffice.</br>
+
+???+ note
+
+    It is assumed that you have a partition layout already setup.
+    <br>It is also assumed that you are using a UEFI system.</br>
+    <br>Kreato Linux doesn't have a live ISO image. It is assumed that you would start the installation from another Linux installation.</br>
+    <br>If you do not have a working Linux install, we recommend [Arch Linux LiveISO](https://archlinux.org/download/) for installation.</br>
+
+???+ warning "Here be dragons!"
+
+    Keep in mind that Kreato Linux is in ALPHA stage and **will** have issues.
+    <br>If you want a more polished experience, please wait until it is announced to be stable.</br>
+    <br>By continuing to install and use Kreato Linux, you agree that you have a good understanding of Linux systems.</br>
+    <br>Any basic issues/anything not related to Kreato Linux will be closed without warning.</br>
+
 
 ## Get rootfs tarball
 First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [Github Actions](https://github.com/kreatolinux/src/actions/workflows/build-rootfs.yml?query=is%3Asuccess).
