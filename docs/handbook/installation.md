@@ -2,9 +2,9 @@
 
 ## Introduction 
 It is assumed that you have a partition layout already setup.
-It is also assumed that you are using a UEFI system.
-Kreato Linux doesn't have a live ISO image. It is assumed that you would start the installation from another Linux installation. 
-If you do not have a working Linux install, we recommend [Arch Linux LiveISO](https://archlinux.org/download/) for installation.
+<br>It is also assumed that you are using a UEFI system.</br>
+<br>Kreato Linux doesn't have a live ISO image. It is assumed that you would start the installation from another Linux installation.</br>
+<br>If you do not have a working Linux install, we recommend [Arch Linux LiveISO](https://archlinux.org/download/) for installation.</br>
 
 ## Get rootfs tarball
 First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [Github Actions](https://github.com/kreatolinux/src/actions/workflows/build-rootfs.yml?query=is%3Asuccess).
@@ -26,11 +26,11 @@ builder-gnu-rootfs is just builder-rootfs with GNU coreutils, this is for buildi
 You dont need to touch server-rootfs, it is meant for Kreato Linux binary repository server and it comes with an web server for that purpose.
 
 ### Extracting
-Mount the partition you are gonna install it to `/mnt`.
-Once downloaded, extract the zip file and you will get a tarball.
-Extract the tarball using the command here;
-`tar --same-owner -xvf kreato-linux-*.tar.gz -C /mnt`
-Once extracted, we can move on to chrooting.
+<br>Mount the partition you are gonna install it to `/mnt`.</br>
+<br>Once downloaded, extract the zip file and you will get a tarball.</br>
+<br>Extract the tarball using the command here;</br>
+<br>`tar --same-owner -xvf kreato-linux-*.tar.gz -C /mnt`</br>
+<br>Once extracted, we can move on to chrooting.</br>
 
 ## Chrooting
 Before chrooting, mount your EFI partition to `/boot`.
@@ -117,9 +117,9 @@ echo "export LANG=$LOCALE" >> /etc/profile
 
 ## Installing a Window Manager
 Kreato Linux only offers `sway` for now and will only support Wayland for now.
-You can install sway by running `kpkg install sway`.
-More Wayland window managers are coming soon.
-You can also install foot, a terminal by running `kpkg install foot`
+<br>You can install sway by running `kpkg install sway`.</br>
+<br>More Wayland window managers are coming soon.</br>
+<br>You can also install foot, a terminal by running `kpkg install foot`</br>
 
 # What's Next
 You can tinker with your setup, install additional software, package something, etc.
