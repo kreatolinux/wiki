@@ -64,9 +64,10 @@ And you should be in!
 ## Installing base system packages
 
 ### Binary vs. Source
-Kreato Linux offers 2 choices for installation.<br>
-* Source based (compiling software),</br><br>
-* And binary based (installing from binary repository).</br>
+Kreato Linux offers 2 choices for installation.
+
+* Source based (compiling software),
+* And binary based (installing from binary repository).
 
 Both choices have their own advantages.
 
