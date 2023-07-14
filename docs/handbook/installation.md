@@ -65,7 +65,7 @@ And you should be in!
 
 ### Binary vs. Source
 Kreato Linux offers 2 choices for installation.<br>
-* Source based (compiling software),
+* Source based (compiling software),</br><br>
 * And binary based (installing from binary repository).</br>
 
 Both choices have their own advantages.
