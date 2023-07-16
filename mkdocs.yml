@@ -1,4 +1,6 @@
 site_name: Kreato Linux Documentation
+copyright: Copyright &copy; 2023 Kreato
+
 theme:
   name: material
   palette:
@@ -30,3 +32,12 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kreatolinux/wiki
+      name: Contribute to the documentation on Github!
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/6wW58wzR
+      name: Kreato Linux Discord server
