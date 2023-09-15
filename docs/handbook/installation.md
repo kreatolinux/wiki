@@ -136,7 +136,7 @@ You can set up the locale by running these commands. Change `LOCALE=en_US` with 
 LOCALE=en_US
 mkdir -p /usr/lib/locale
 localedef -i $LOCALE -c -f UTF-8 $LOCALE
-echo "export LANG=$LOCALE" >> /etc/profile
+echo "export LANG=$LOCALE.UTF-8" >> /etc/profile
 ```
 
 ## Install Flatpak
