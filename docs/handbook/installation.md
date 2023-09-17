@@ -83,6 +83,25 @@ Both choices have their own advantages.
 
 This installation guide will assume that you are gonna install binary packages (`kpkg install packagename`). If you want to build packages, please change `kpkg install` to `kpkg build` so it builds the packages instead of installing the binary.
 
+### Stable repositories vs master
+Kreato Linux has 2 branches in official repositories named `master` and `stable`.</br>
+As the name implies, `stable` is the stable branch. `master` is the unstable branch.
+
+#### Advantages and disadvantages of stable
+* Packages that are added in stable are *usually* well-tested and ready for production.
+* Packages may be out of date compared to the master branch.
+* Most recent additions wont be there, atleast until they are considered well-tested.
+* Is the default repository.
+
+#### Advantages and disadvantages of master.
+* It is cutting edge, it will get the updates first.
+* Packages may be for a more recent, unreleased version of `kpkg`.
+* Most recent additions and improvements will be there.
+* Is not the default unless you build `kpkg` manually.
+
+Kreato Linux is mostly focused on the master branch for now, but we try to keep stable recent enough.</br>
+You can switch to the branches by editing `repoLinks` on `/etc/kpkg/kpkg.conf`. If the file doesn't exist, run `kpkg` since it'll generate the files for you.
+
 Now we can continue with installing base system packages.
 
 ### Installing the init system
@@ -145,14 +164,19 @@ Install Flatpak; `kpkg install flatpak`<br/>
 Then you can get apps from Flathub by running; `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
 ## Installing a Window Manager
-Kreato Linux only offers `sway` for now and will only support Wayland for now.
+Kreato Linux only offers `sway` for now.
 <br>You can install sway by running `kpkg install sway`.</br>
 <br>More Wayland window managers are coming soon.</br>
 <br>You can also install foot, a terminal by running `kpkg install foot`</br>
 
 ## Installing Desktop Environments
-Kreato Linux only offers GNOME for now in terms of desktop environments.<br/>
-Install it by running `kpkg install gnome-shell`.
+Kreato Linux only offers GNOME for now in terms of desktop environments.
+
+# GNOME
+Install it by running `kpkg install gnome`.</br>
+You can then enable and start GDM as a display manager by running `jumpctl enable gdm --now` or `systemctl enable gdm --now`.</br>
+You can also start GNOME manually by running `XDG_SESSION_TYPE=wayland dbus-run-session gnome-session`.
+
 
 # What's Next
 You can tinker with your setup, install additional software, package something, etc.
