@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.5.3, mkdocs-terminal-4.4.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Installation - Kreato Linux Documentation</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- gruvbox_dark color palette -->
+<link href="../../css/palettes/gruvbox_dark.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Kreato Linux Documentation</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Welcome</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../history/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">History</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../kreaiso/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Kreaiso</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../kreato-release/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">kreato-release file</span>
+                    </a>
+                    <meta property="position" content="3">
+                </li>
+                
+                
+                
+                
+                
+                    
+                    
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">Welcome</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../history/">History</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../kreaiso/">Kreaiso</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../kreato-release/">kreato-release file</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">WIP</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../WIP/">Welcome</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Handbook</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../">Welcome</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Installation</span>
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../what-is-kreato-linux/">What is Kreato Linux?</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Contributing</span>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#introduction">Introduction</a></li><li><a href="#get-rootfs-tarball">Get rootfs tarball</a></li><li><a href="#chrooting">Chrooting</a></li><li><a href="#installing-base-system-packages">Installing base system packages</a></li><li><a href="#change-the-root-password">Change the root password</a></li><li><a href="#setting-up-the-locale">Setting up the locale</a></li><li><a href="#install-flatpak">Install Flatpak</a></li><li><a href="#installing-a-window-manager">Installing a Window Manager</a></li><li><a href="#installing-desktop-environments">Installing Desktop Environments</a></li><li><a href="#gnome">GNOME</a></li>
+        <li><a href="#whats-next">What's Next</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="installation">Installation</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Welcome to Kreato Linux installation guide! </p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>It is assumed that you have a partition layout already setup.
+<br>It is also assumed that you are using a UEFI system.</br>
+<br>Kreato Linux doesn't have a live ISO image. It is assumed that you would start the installation from another Linux installation.</br>
+<br>If you do not have a working Linux install, we recommend <a href="https://archlinux.org/download/">Arch Linux LiveISO</a> for installation.</br></p>
+</details>
+<details class="warning" open="open">
+<summary>Here be dragons!</summary>
+<p>Keep in mind that Kreato Linux is in ALPHA stage and <strong>will</strong> have issues.
+<br>If you want a more polished experience, please wait until it is announced to be stable.</br>
+<br>By continuing to install and use Kreato Linux, you agree that you have a good understanding of Linux systems.</br>
+<br>Any basic issues/anything not related to Kreato Linux will be closed without warning.</br></p>
+</details>
+<h2 id="get-rootfs-tarball">Get rootfs tarball</h2>
+<p>First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through <a href="https://github.com/kreatolinux/src/actions/workflows/build-rootfs.yml?query=is%3Asuccess">Github Actions</a>.</p>
+<h3 id="choosing-the-right-tarball">Choosing the right tarball</h3>
+<p>Kreato Linux is a modular distribution. There are four build types currently available.</p>
+<ul>
+<li>nocc-rootfs</li>
+<li>builder-rootfs</li>
+<li>builder-gnu-rootfs</li>
+<li>and builder-systemd-rootfs.</li>
+</ul>
+<p>nocc-rootfs is completely built by GitHub Actions and as the name implies, doesnt have any compilers by default. You can use binaries to install any compilers, or dont build at all and use the system with just binaries.</p>
+<p>builder-rootfs is also built by GitHub actions and comes with gcc.</p>
+<p>builder-gnu-rootfs is just builder-rootfs with GNU coreutils, this is for building problematic packages with Busybox such as systemd.</p>
+<p>builder-systemd-rootfs is builder-gnu-rootfs but uses systemd instead of Jumpstart.</p>
+<h3 id="extracting">Extracting</h3>
+<p><br>Mount the partition you are gonna install it to <code>/mnt</code>.</br>
+<br>Once downloaded, extract the zip file and you will get a tarball.</br>
+<br>Extract the tarball using the command here;</br>
+<br><code>tar --same-owner -xvf kreato-linux-*.tar.gz -C /mnt</code></br>
+<br>Once extracted, we can move on to chrooting.</br></p>
+<h2 id="chrooting">Chrooting</h2>
+<p>Before chrooting, mount your EFI partition to <code>/boot</code>.
+Run these commands to chroot.</p>
+<div class="highlight"><pre><span></span><code>mount -o bind /dev /mnt/dev
+mount -t proc none /mnt/proc
+mount -o bind /sys /mnt/sys
+mount -o bind /tmp /mnt/tmp
+chroot /mnt /bin/bash
+. /etc/profile
+</code></pre></div>
+<p>And you should be in! </p>
+<h2 id="installing-base-system-packages">Installing base system packages</h2>
+<h3 id="binary-vs-source">Binary vs. Source</h3>
+<p>Kreato Linux offers 2 choices for installation.</p>
+<ul>
+<li>Source based (compiling software),</li>
+<li>And binary based (installing from binary repository).</li>
+</ul>
+<p>Both choices have their own advantages.</p>
+<h4 id="advantages-and-disadvantages-of-building-packages">Advantages and disadvantages of building packages</h4>
+<ul>
+<li>Updates come faster.</li>
+<li>Has more customizability and optimization options.</li>
+<li>Building is slower than downloading a binary tarball.</li>
+</ul>
+<h4 id="advantages-and-disadvantages-of-binary-packages">Advantages and disadvantages of binary packages</h4>
+<ul>
+<li>Updates are available with a lag.</li>
+<li>Has less customizability.</li>
+<li>Doesn't require building packages, making it more suitable to older/less powerful systems.</li>
+<li>Is not currently stable, packages may not even exist on the mirror.</li>
+</ul>
+<p>This installation guide will assume that you are gonna install binary packages (<code>kpkg install packagename</code>). If you want to build packages, please change <code>kpkg install</code> to <code>kpkg build</code> so it builds the packages instead of installing the binary.</p>
+<h3 id="stable-repositories-vs-master">Stable repositories vs master</h3>
+<p>Kreato Linux has 2 branches in official repositories named <code>master</code> and <code>stable</code>.</br>
+As the name implies, <code>stable</code> is the stable branch. <code>master</code> is the unstable branch.</p>
+<h4 id="advantages-and-disadvantages-of-stable">Advantages and disadvantages of stable</h4>
+<ul>
+<li>Packages that are added in stable are <em>usually</em> well-tested and ready for production.</li>
+<li>Packages may be out of date compared to the master branch.</li>
+<li>Most recent additions wont be there, atleast until they are considered well-tested.</li>
+<li>Is the default repository.</li>
+</ul>
+<h4 id="advantages-and-disadvantages-of-master">Advantages and disadvantages of master.</h4>
+<ul>
+<li>It is cutting edge, it will get the updates first.</li>
+<li>Packages may be for a more recent, unreleased version of <code>kpkg</code>.</li>
+<li>Most recent additions and improvements will be there.</li>
+<li>Is not the default unless you build <code>kpkg</code> manually.</li>
+</ul>
+<p>Kreato Linux is mostly focused on the master branch for now, but we try to keep stable recent enough.</br>
+You can switch to the branches by editing <code>repoLinks</code> on <code>/etc/kpkg/kpkg.conf</code>. If the file doesn't exist, run <code>kpkg</code> since it'll generate the files for you.</p>
+<p>Now we can continue with installing base system packages.</p>
+<h3 id="installing-the-init-system">Installing the init system</h3>
+<p>Kreato Linux includes multiple init systems. systemd, OpenRC and Jumpstart exist as a option. Jumpstart is the default and recommended option.</p>
+<ul>
+<li>If you want systemd; you can install <code>systemd</code>: <code>kpkg install systemd</code>. Systemd also comes by default in builder-systemd-rootfs.</li>
+<li>If you want OpenRC: you can install <code>openrc</code>: <code>kpkg install openrc</code></li>
+<li>If you want Jumpstart, it is installed by default on every rootfs except <code>builder-systemd-rootfs</code></li>
+</ul>
+<h3 id="installing-networking-tools">Installing networking tools</h3>
+<p><code>dhcpcd</code> is recommended. run <code>kpkg install dhcpcd</code> to install <code>dhcpcd</code>.<br/>
+You should install <code>wpa_supplicant</code> aswell if you need Wi-Fi connectivity. run <code>kpkg install wpa_supplicant</code> to install it.</p>
+<h3 id="installing-the-kernel">Installing the kernel</h3>
+<p>You can either build your own kernel or use Kreato Linux's kernel, that uses Gentoo's kernel configuration.<br/>
+It is recommended to build your own kernel, since it will be much more minimal and will compile faster (if you are building the package).<br/>
+You can run <code>kpkg install linux</code> to install the prebuilt kernel.<br/>
+As for building your own kernel, you can check out <a href="https://www.youtube.com/watch?v=NVWVHiLx1sU">This video</a>.</p>
+<h3 id="building-the-initramfs">Building the initramfs</h3>
+<p>You can use either <code>dracut</code>, which doesn't work on Busybox systems at the moment, or <code>booster</code>.<br/>
+Both are valid options and both are tested.<br/>
+Keep in mind that <code>dracut</code> has been only tested on systems using systemd, your mileage may vary. </p>
+<h3 id="installing-the-bootloader">Installing the bootloader</h3>
+<p>Kreato Linux offers multiple bootloaders.<br/>
+You can use Limine or Grub.</p>
+<p>Grub is the most tested option.</p>
+<p>You can install Grub by running <code>kpkg install grub</code>.<br/>
+You can then install it to <code>/boot</code> like so; <code>grub-install --target=x86_64-efi --efi-directory=/boot</code><br/>
+Then generate the config; <code>grub-mkconfig -o /boot/grub/grub.cfg</code></p>
+<p>As for Limine, you can install it by running <code>kpkg install limine</code>.<br/>
+Configuration is already explained greatly on <a href="https://wiki.archlinux.org/title/Limine">Arch Wiki</a>, so i wont repeat it here.</p>
+<h2 id="change-the-root-password">Change the root password</h2>
+<p>You should change the root password by running this command;
+<code>passwd root</code>
+If you want to do so, you can also add additional users with <code>useradd</code>.</p>
+<p>Now you should be able to boot Kreato Linux by itself.</p>
+<h2 id="setting-up-the-locale">Setting up the locale</h2>
+<p>You can set up the locale by running these commands. Change <code>LOCALE=en_US</code> with your language (Example; <code>LOCALE=de_DE</code> for German)</p>
+<div class="highlight"><pre><span></span><code>LOCALE=en_US
+mkdir -p /usr/lib/locale
+localedef -i $LOCALE -c -f UTF-8 $LOCALE
+echo &quot;export LANG=$LOCALE.UTF-8&quot; &gt;&gt; /etc/profile
+</code></pre></div>
+<h2 id="install-flatpak">Install Flatpak</h2>
+<p>As the repositories are very tiny, you may need Flatpak to get packages.<br/>
+Install Flatpak; <code>kpkg install flatpak</code><br/>
+Then you can get apps from Flathub by running; <code>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</code></p>
+<h2 id="installing-a-window-manager">Installing a Window Manager</h2>
+<p>Kreato Linux only offers <code>sway</code> for now.
+<br>You can install sway by running <code>kpkg install sway</code>.</br>
+<br>More Wayland window managers are coming soon.</br>
+<br>You can also install foot, a terminal by running <code>kpkg install foot</code></br></p>
+<h2 id="installing-desktop-environments">Installing Desktop Environments</h2>
+<p>Kreato Linux only offers GNOME for now in terms of desktop environments.</p>
+<h1 id="gnome">GNOME</h1>
+<p>Install it by running <code>kpkg install gnome</code>.</br>
+You can then enable and start GDM as a display manager by running <code>jumpctl enable gdm --now</code> or <code>systemctl enable gdm --now</code>.</br>
+You can also start GNOME manually by running <code>XDG_SESSION_TYPE=wayland dbus-run-session gnome-session</code>.</p>
+<h1 id="whats-next">What's Next</h1>
+<p>You can tinker with your setup, install additional software, package something, etc.</p>
+<p>If you want to contribute to Kreato Linux, you can look at the <a href="../contributing/">Contribution Guide</a>.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+            
+            <p class="text-center text-muted">Copyright &copy; 2023 Kreato</p>
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
